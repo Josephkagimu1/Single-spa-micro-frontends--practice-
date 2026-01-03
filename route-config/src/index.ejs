@@ -1,0 +1,17 @@
+import { registerApplication, start } from "single-spa";
+
+// Navbar
+registerApplication({
+  name: "@org/navbar",
+  app: () => System.import("@org/navbar"),
+  activeWhen: ["/"]
+});
+
+// Patient App
+registerApplication({
+  name: "@org/patient-app",
+  app: () => System.import("@org/patient-app"),
+  activeWhen: ["/patients"]
+});
+
+start();

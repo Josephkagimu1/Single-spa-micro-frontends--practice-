@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@org/navbar": "http://localhost:9001/navbar.js",
+    "@org/patient-app": "http://localhost:9002/patient-app.js"
+  }
+}
